@@ -1,4 +1,4 @@
-/*Universal Styles*/ 
+/*Universal Styles..........................................*/ 
 
 html {
 	font-family: helvetica, sans-serif;
@@ -40,7 +40,7 @@ nav ul li{
     font-size: 1rem;
 }
 
-/* Common Clases*/
+/* Common Clases..........................................*/
 
 .container{
 	display: flex;
@@ -66,14 +66,18 @@ nav ul li{
 	color: #777;
 	font-size: 0.9rem;
 }
-/*Header*/
+.active:hover {
+	background-color: #dce0f9;
+	transition: background-color 0.3s ease-in;
+}
+/*Header.................................................*/
 
 header{
 	background-color: white;
 	height: 64px;
 	width: 100%;
 }
-header nav {
+header .desktop {
 	color:#585858;
 	display: flex;
 	justify-content: flex-end;
@@ -101,7 +105,7 @@ header .container{
 }
 
 
-/*First Banner*/
+/*First Banner..........................................*/
 
 .big-img img{
 	width: 100%;
@@ -114,7 +118,7 @@ header .container{
 	color: #444;
 	font-size: 1.4rem;
 	font-weight: bold;
-	margin:1.6rem 0;
+	margin:24px 0;
 }
 .button{
 	background-color: #673f7b;
@@ -126,7 +130,7 @@ header .container{
 	text-align: center;	
 }
 
-/*2nd Container*/
+/*2nd Container..........................................*/
 #two .text{
 	margin-right: 0;
 }
@@ -140,6 +144,9 @@ header .container{
 	color: #444;
 	font-size: 1rem;
 	font-weight: normal;
+}
+#two .column{
+	margin: 0;
 }
 
 .article-container{
@@ -168,15 +175,12 @@ header .container{
 .article a,p{
 	font-size: 0.9rem;
 }
-#two .column{
-	margin: 0;
-}
 
 .description {
 	margin-left: 16px;
 }
 
-/*Start Learning*/ 
+/*Start Learning..........................................*/ 
 #Courses h1{
 	text-align: center;
 	font-weight: 900;
@@ -216,7 +220,7 @@ header .container{
 	margin:0;
 }
 
-/*Thesis*/ 
+/*Thesis..........................................*/ 
 
 #Thesis.container{
 	display: block;
@@ -228,7 +232,6 @@ header .container{
 #Thesis h1{
 	width: 100%;
 	text-align: center;
-	padding: 20px;
 }
 #Thesis .text p{
 	font-size: 1rem;
@@ -236,13 +239,13 @@ header .container{
 }
 .alt-container{
 	display: flex;
-	margin-top:12px;
+	margin-top: 32px;
 }
 video{
 	width: 100%;
 }
 
-/*Footer*/
+/*Footer..........................................*/
 
 footer {
 	border-top: 1px solid lightgray;
@@ -261,3 +264,106 @@ footer ul{
 .copyright{
 	width: 100%;	
 }
+
+
+/*.....
+.......MEDIA QUERIES ....
+*/
+
+
+@media only screen and (min-width: 461px) {
+	.mobile,
+	.mobile-img{
+		display: none;
+	}	
+}
+/*mobile*/
+@media only screen and (max-width: 460px) {
+	.company,
+	.desktop,
+	header .desktop,
+	#two .side-container {
+		display: none;
+	}
+	.container {
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 32px 16px;
+		border-bottom: 1px solid lightgray;
+	}
+	.column{
+		margin: 0;
+	}
+	.gray {
+		background-color: #f1f2f3;
+	}
+
+	header .container{
+		padding: 0;
+	}
+	header .mobile {
+		display: flex;
+		justify-content: space-around;
+		margin:0;
+		width: 100%;
+	}
+	.mobile ul{
+		justify-content: space-around;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+	nav .mobile li:first-child{
+		margin-left: 0;
+	}
+	header .mobile li {
+		margin: 0
+	}
+
+	/*1st banner*/
+	#First .gray {
+		background-color: #ddd; 
+	}
+	.side-container {
+		min-width: 100%;
+	}
+
+	/*2nd banner*/
+	.article-container {
+		border-left: 0;
+	}
+	.article {
+		border-bottom: 1px solid #ccc;
+		flex-direction: column;
+		margin: 0 0 20px 0;
+		padding: 0 0 16px 0;
+	}
+	.article img{
+		width: 100%
+	}
+	.mobile-img {
+		width: 100%;
+	}
+
+	/*Start Learning*/
+	#Courses .mobile {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+	}
+	#Courses .mobile ul{
+
+	}
+	#Courses .mobile li {
+		background-color: #ccc;
+		border-radius: 3px;
+		font-size: 1.4rem;
+		font-weight: 400;
+		margin: 4px 0;
+		padding: 16px;
+	}
+
+}
+
