@@ -13,6 +13,7 @@ body {
 a {
 	color:#016ABA;
 	text-decoration: none;
+	transition: all 200ms;
 }
 
 h1{
@@ -66,10 +67,7 @@ nav ul li{
 	color: #777;
 	font-size: 0.9rem;
 }
-.active:hover {
-	background-color: #dce0f9;
-	transition: background-color 0.3s ease-in;
-}
+
 /*Header.................................................*/
 
 header{
@@ -127,7 +125,8 @@ header .container{
 	color: white;
 	font-size: 1.2rem;
 	padding: 16px 0;
-	text-align: center;	
+	text-align: center;
+	transition: all 0.1s ease-in;
 }
 
 /*2nd Container..........................................*/
@@ -162,10 +161,6 @@ header .container{
 }
 .article:last-child{
 	border-bottom: 0;
-}
-.article:hover{
-	background-color: #dce0f9;
-	transition: background-color 0.5s;
 }
 
 .article img{
@@ -260,25 +255,51 @@ footer ul{
     text-align: right;
     width: 100%;
 }
-}
+
 .copyright{
 	width: 100%;	
 }
 
 
-/*.....
-.......MEDIA QUERIES ....
+/*...................................................
+...................MEDIA QUERIES ....................
 */
 
 
-@media only screen and (min-width: 461px) {
+/*Desktop..........................................*/
+@media only screen and (min-width: 501px) {
 	.mobile,
 	.mobile-img{
 		display: none;
-	}	
+	}
+
+	/*PSEUDO CLASES...........*/
+	a:hover {
+		color:#673f7b;
+	}
+	.hover{
+		transition: all 100ms ease-in;
+	}
+
+	.hover:hover{
+		background-color: #673f7b;
+		color: white;
+	}
+	.hover:hover h3{
+		color:white;
+	}
+	.hover:hover a{
+		color:white;
+	}
+	.button:hover{
+		font-size: 1.2rem;
+		padding: 18px 2px;
+	}
+
 }
-/*mobile*/
-@media only screen and (max-width: 460px) {
+
+/*mobile...................................................*/
+@media only screen and (max-width: 500px) {
 	.company,
 	.desktop,
 	header .desktop,
@@ -321,7 +342,7 @@ footer ul{
 		margin: 0
 	}
 
-	/*1st banner*/
+	/*1st banner...............................*/
 	#First .gray {
 		background-color: #ddd; 
 	}
@@ -329,7 +350,7 @@ footer ul{
 		min-width: 100%;
 	}
 
-	/*2nd banner*/
+	/*2nd banner...............................*/
 	.article-container {
 		border-left: 0;
 	}
@@ -346,14 +367,11 @@ footer ul{
 		width: 100%;
 	}
 
-	/*Start Learning*/
+	/*Start Learning........................*/
 	#Courses .mobile {
 		display: flex;
 		flex-direction: column;
 		padding: 0;
-
-	}
-	#Courses .mobile ul{
 
 	}
 	#Courses .mobile li {
@@ -363,6 +381,24 @@ footer ul{
 		font-weight: 400;
 		margin: 4px 0;
 		padding: 16px;
+	}
+
+	/*Pseudo clases.........................*/
+	.hover{
+	}
+	.hover:active{
+		background-color: #673f7b;
+		color: white;
+	}
+	.hover:active h3{
+		color:white;
+	}
+	.hover:active a{
+		color:white;
+	}
+	.button:active{
+		font-size: 1.2rem;
+		padding: 18px 2px;
 	}
 
 }
