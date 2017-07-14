@@ -1,0 +1,263 @@
+/*Universal Styles*/ 
+
+html {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	color: #555;
+}
+
+body {
+	background: #f1f2f3;
+}
+
+a {
+	color:#016ABA;
+	text-decoration: none;
+}
+
+h1{
+	color: #6d6073;
+	font-family: Verdana;
+	font-size: 1.85rem;
+	font-weight: 900;
+	margin: 0;
+}
+h2{
+	font-size: 1.2rem;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+li{
+	margin-left: 16px;
+}
+nav ul li{
+	color: #888;
+	margin-left: 30px;    
+    font-size: 1rem;
+}
+
+/* Common Clases*/
+
+.container{
+	display: flex;
+	padding: 32px 24px;
+}
+.side-container{
+	display: flex;
+	max-width: 60%;
+	min-width: 60%;
+	flex-direction: column;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 40px;
+	padding: 0;
+}
+.gray {
+	background-color: #ddd;
+}
+.quote{
+	color: #777;
+	font-size: 0.9rem;
+}
+/*Header*/
+
+header{
+	background-color: white;
+	height: 64px;
+	width: 100%;
+}
+header nav {
+	color:#585858;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	font-size: 1.2rem;
+}
+header .container{
+	align-items: center;
+	padding: 0 24px;
+}
+
+.company{
+	color: #8A8A8A;
+	display: flex;
+	font-size: 1.50rem;
+}
+.company img{
+	height: 50px;
+}
+.company span{
+	margin: auto;
+}
+.company strong{
+	color: #4b5256;
+}
+
+
+/*First Banner*/
+
+.big-img img{
+	width: 100%;
+}
+
+.text {
+	margin-right: 7%;
+}
+.text p{
+	color: #444;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin:1.6rem 0;
+}
+.button{
+	background-color: #673f7b;
+	border-radius: 4px;
+	border-bottom: 1px solid #000;
+	color: white;
+	font-size: 1.2rem;
+	padding: 16px 0;
+	text-align: center;	
+}
+
+/*2nd Container*/
+#two .text{
+	margin-right: 0;
+}
+#two .side-container {
+	margin-right: 24px;
+}
+#two .text h1{
+	margin: 32px 0;
+}
+#two .text p {
+	color: #444;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.article-container{
+	border-left: 2px solid lightgray;
+}
+.article{
+	display: flex;
+	padding: 16px;
+	border-bottom: 1px solid rgba(211, 211, 211, 0.57);
+}
+.article:first-child{
+	padding-top: 0;
+}
+.article:last-child{
+	border-bottom: 0;
+}
+.article:hover{
+	background-color: #dce0f9;
+	transition: background-color 0.5s;
+}
+
+.article img{
+	width: 35%;
+	height: 35%;
+}
+.article a,p{
+	font-size: 0.9rem;
+}
+#two .column{
+	margin: 0;
+}
+
+.description {
+	margin-left: 16px;
+}
+
+/*Start Learning*/ 
+#Courses h1{
+	text-align: center;
+	font-weight: 900;
+	font-size: 2rem;
+}
+#Courses .container{
+	flex-direction: column;
+}
+#Courses .description{
+	margin-bottom: 24px;
+}
+
+.course-container{
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 7%;
+	margin-bottom: 32px;
+}
+.course-item{
+	background-color: white;
+	color: #888;
+	margin: 10px;
+    width: 30%;
+}
+.course-item img{
+	width: 100%;
+	height: auto;
+}
+.description h3{
+	color: #555;
+}
+.description span{
+	font-weight: bold;
+	margin: 8px 0;
+}
+.description p{
+	margin:0;
+}
+
+/*Thesis*/ 
+
+#Thesis.container{
+	display: block;
+}
+#Thesis .column{
+	margin: 0 0 0 16px
+}
+
+#Thesis h1{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+#Thesis .text p{
+	font-size: 1rem;
+	font-weight: normal;
+}
+.alt-container{
+	display: flex;
+	margin-top:12px;
+}
+video{
+	width: 100%;
+}
+
+/*Footer*/
+
+footer {
+	border-top: 1px solid lightgray;
+	display: flex;
+	padding: 24px;
+}
+footer a{
+	font-size: 0.9rem;
+	color: #888;
+}
+footer ul{
+    text-align: right;
+    width: 100%;
+}
+}
+.copyright{
+	width: 100%;	
+}
